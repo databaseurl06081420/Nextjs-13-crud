@@ -1,5 +1,6 @@
 import AddProduct from "./addProduct";
 import DeleteProduct from "./deleteProduct";
+import New from "./new";
 import UpdateProduct from "./updateProduct";
 
 export const metadata = {
@@ -45,8 +46,13 @@ export default async function ProductList() {
                 <div className="mr-1">
                   <UpdateProduct {...product} />
                 </div>
-
+                <div className="mr-1">
                 <DeleteProduct {...product} />
+                </div>
+                <New {...product} />
+                <div>
+                
+                </div>
               </td>
             </tr>
           ))}
